@@ -1,0 +1,378 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Jost';
+}
+
+::selection {
+    background-color: #7a7a8a;
+}
+
+:root {
+    --primary-color: #80db66;
+}
+
+
+/* Header */
+header {
+    width: 100%;
+    top: 0;
+    left: 0px;
+    z-index: 10;
+    background-image: url(../images/slider-bg.jpg);
+    padding: 25px 10px;
+}
+
+.logo-img img {
+    max-width: 195px;
+    height: auto;
+}
+
+.menus li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s linear;
+}
+
+.menus li a:hover {
+    color: var(--primary-color);
+}
+
+.active {
+    color: #80db66 !important;
+}
+
+.header-btn a {
+    padding: 12px 28px 11px 28px;
+    color: white;
+    border: 1px solid var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.header-btn a:hover {
+    color: black;
+    background-color: var(--primary-color);
+}
+
+.menu-btn i {
+    color: var(--primary-color);
+    font-size: 25px;
+    margin-left: 20px;
+    display: none;
+}
+
+.offcanvas.offcanvas-start {
+    width: 320px;
+}
+
+.btn-close.close {
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--primary-color);
+    padding: 12px;
+    background-color: #4a4b55;
+    border-radius: 50%;
+}
+
+.offcanvas {
+    background-color: #222222;
+}
+
+.aside-menus li {
+    color: white;
+    padding: 8px 14px;
+}
+
+.aside-menus li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.aside-social li a {
+    color: white;
+    font-size: 20px;
+    padding: 6px 10px;
+    border-radius: 50%;
+}
+
+.blue {
+    background-color: #1877F2;
+}
+
+.sky-blue {
+    background-color: #1DA1F2;
+}
+
+.sky-blue1 {
+    background-color: #0077B5;
+}
+
+/* Main Section */
+.main-page {
+    background-image: url(../images/slider-bg.jpg);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.main-heading .sub-heading {
+    color: var(--primary-color);
+    font-size: 24px;
+    line-height: 1.3;
+    letter-spacing: 7px;
+    font-weight: 400;
+}
+
+.family {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-heading h1 {
+    font-size: 120px;
+}
+
+.typewitter::before {
+    font-family: "Segoe UI";
+    color: #000000;
+    content: "pec.edu ";
+}
+
+.typewitter::after {
+    content: "_";
+    color: var(--primary-color);
+    animation: blinkingbox 1s infinite;
+}
+
+@keyframes blinkingbox {
+    0% {
+        color: #2E8690;
+    }
+
+    50% {
+        color: #fff;
+    }
+}
+
+.heading-writter {
+    font-size: 24px;
+}
+
+.typewrite {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 36px;
+    padding-left: 5px;
+}
+
+.hello-btn {
+    color: black;
+    background-color: var(--primary-color);
+    padding: 14px 40px 13px 40px;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.hello-btn:hover {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.hello-btn:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    transform: skew(-45deg);
+    width: 20%;
+    top: 0px;
+    right: 110%;
+    background: #2d2e36;
+    opacity: 0.2;
+    transition: .4s all;
+}
+
+.hello-btn:hover:after {
+    right: -120%;
+}
+
+.profile-img {
+    height: 100vh;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.profile-img::before {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background-color: rgb(59, 60, 70);
+    opacity: 0.529;
+    left: 2%;
+    top: 130px;
+    width: 550px;
+    height: 550px;
+    animation: grow 9s infinite;
+}
+
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.profile-img img {
+    max-width: 100%;
+    height: calc(100vh - 140px);
+    position: relative;
+    bottom: -140px;
+    z-index: 5;
+}
+
+.social-links {
+    right: 40px;
+    top: 30%;
+}
+
+.social-links ul {
+    padding-right: 15px;
+}
+
+
+.social-links ul li a {
+    font-size: 22px;
+    color: #ffffff;
+    width: 55px;
+    margin: 15px 0;
+    padding: 12px 15px;
+    line-height: 52px;
+    border: 1px solid rgb(204, 211, 217, 0.2);
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+
+.social-links ul li a:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: black;
+}
+
+/* intro-feature-area */
+.intro-feature-area {
+    background-color: #212228;
+}
+
+.ptb {
+    padding-top: 170px;
+    padding-bottom: 140px;
+}
+
+.intro-detail h4 {
+    font-size: 24px;
+}
+
+.intro-detail p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.67;
+    color: #b0aac0;
+}
+
+.mt-60 {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.card {
+    font-weight: bold;
+    padding: 55px 46px 35px 46px;
+    color: white;
+    box-shadow: 1px 1px 10px #32313199;
+    border-radius: 10px;
+    background-color: #2D2E36;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px #32313199;
+}
+
+.back-name {
+    font-size: 250px;
+    font-weight: 500;
+    bottom: -80px;
+    line-height: 1;
+    right: 0px;
+    color: #2d2e36;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+/* Personal Details Section */
+
+.personal-details {
+    position: relative;
+    z-index: 2;
+    background-color: #26272E;
+}
+
+.personal-pic {
+    margin-top: 170px;
+    margin-bottom: 110px;
+    /* padding: 30px;
+    padding-left: 30px; */
+    padding-right: 0;
+    /* padding-bottom: 50px; */
+    position: relative;
+    z-index: 2;
+}
+
+.personal-pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    filter: grayscale(1.2);
+    position: relative;
+    z-index: 2;
+}
+
+.left-bg-name {
+    font-size: 250px;
+    font-weight: 500;
+    line-height: 1;
+    left: -115px;
+    bottom: 270px;
+    color: #2d2e36;
+    box-sizing: border-box;
+    z-index: 1;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+}
+
+.square {
+    position: absolute;
+    width: 133px;
+    height: 134px;
+    border: 4px solid var(--primary-color);
+    right: -25px;
+    top: -25px;
+    z-index: 1;
+}
+

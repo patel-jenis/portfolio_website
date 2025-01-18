@@ -1,0 +1,201 @@
+
+@media (max-width:1400px) {
+    .main-heading h1 {
+        font-size: 100px;
+    }
+    .left-bg-name {
+        left: -150px;
+    }
+}
+@media (max-width:1300px) {
+    .social-links {
+        right: 10px;
+        top: 30%;
+    }
+}
+@media (max-width:1200px) {
+    .menu-btn i {
+        display: inline-block;
+    }
+    .menus li a {
+        display: none;
+    }
+    header {
+        padding: 25px;
+    }
+    .profile-img::before  {
+        left: -2%;
+        top: 105px;
+        width: 450px;
+        height: 450px;
+    }
+    .main-heading h1 {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-btn a {
+        display: none;
+    }
+    .main-page {
+        margin-top: 100px;
+        height: 1000px;
+        text-align: center;
+    }
+    .profile-img {
+        margin-left: 40px;
+    }
+    .profile-img img {
+        max-width: auto;
+        position: relative;
+        bottom: 0;
+        z-index: 5;
+    }
+    .profile-img::before  {
+        left: 13%;
+        top: 0px;
+        width: 450px;
+        height: 450px;
+    }
+    .card.mt-60 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .personal-pic {
+       margin: 0 30px;
+       margin-top: 170px;
+       margin-bottom: 110px;
+    }
+    .personal-pic img {
+        width: 100%;
+        height: auto;
+        /* padding-left: 50px; */
+    }
+    .left-bg-name{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-page {
+        height: 980px;
+    }
+    .logo-img img {
+        width: 160px;
+        height: auto;
+    }
+    .profile-img img {
+        max-width: auto;
+        position: relative;
+        bottom: 0;
+        z-index: 5;
+    }
+    .profile-img::before  {
+        left: -2%;
+        top: 0px;
+        width: 450px;
+        height: 450px;
+    }
+    .main-heading .sub-heading {
+        font-size: 20px;
+    }
+    .main-heading h1 {
+        font-size: 70px;
+        margin-top: 8px;
+    }
+    .social-links ul li a {
+        display: none;
+    }
+    .heading-writter {
+        font-size: 20px;
+    }
+    .typewrite {
+        font-size: 30px;
+    }
+    .back-name {
+        display: none;
+    }
+    .card.mt-60 {
+        margin-top: 20px;
+    }
+    .ptb {
+        padding-top: 130px;
+        padding-bottom: 100px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .profile-img img {
+        max-width: auto;
+        position: relative;
+        bottom: 0;
+        z-index: 5;
+    }
+    .profile-img::before  {
+        left: 8%;
+        top: 0px;
+        width: 350px;
+        height: 350px;
+    }
+    .main-heading .sub-heading {
+        font-size: 18px;
+    }
+    .main-heading h1 {
+        font-size: 60px;
+        margin-top: 8px;
+    }
+    .heading-writter {
+        font-size: 18px;
+    }
+    .typewrite {
+        font-size: 25px;
+    }
+    .card {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .intro-detail p{
+        font-size: 16px;
+    }
+    .intro-detail h5{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-page {
+        height: 770px;
+    }
+    .profile-img img {
+        max-width: auto;
+        position: relative;
+        height: 400px;
+        bottom: 0;
+        z-index: 5;
+    }
+    .profile-img::before  {
+        left: -3%;
+        top: 0px;
+        width: 280px;
+        height: 280px;
+    }
+    .main-heading .sub-heading {
+        font-size: 18px;
+    }
+    .main-heading h1 {
+        font-size: 60px;
+        margin-top: 8px;
+    }
+    .heading-writter {
+        font-size: 18px;
+    }
+    .typewrite {
+        font-size: 25px;
+    }
+    .ptb {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
