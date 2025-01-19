@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- AOS Enimation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <!-- Remix Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- Jost Fonts -->
@@ -35,7 +37,7 @@
                             <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="">Works</a>
+                            <a href="#works">Works</a>
                         </li>
                         <li>
                             <a href="">Service</a>
@@ -61,6 +63,7 @@
     </header>
 
     <main>
+        <!-- Front Page -->
         <section class="main-page" id="profile-page">
             <div class="container">
                 <div class="row gy-5 justify-content-center align-items-center">
@@ -169,20 +172,191 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
-                        <div class="personal-pic">
-                            <img src="./assets/images/my_pic2.jpg" alt="photo">
+                        <div class="personal-pic" data-aos="zoom-out-right">
+                            <img src="./assets/images/my_pic3.jpg" alt="photo">
                             <div class="square"></div>
                         </div>
                     </div>
-                    <!-- <div class="col-7">
-
-                    </div> -->
+                    <div class="col-lg-7">
+                        <div class="personal-info mtb">
+                            <div class="title">
+                                <span class="text-uppercase">About Me</span>
+                                <h2 class="text-white mt-2 mb-4">I Develop System that Works</h2>
+                            </div>
+                            <p class="my-info">I am a Student. Currently, I am pursuing Full Stack Developer Course from Red & White Multimedia Education. I am an expert in Technical skill. Moreover, I have created many projects. My strength is that I am a Hard-Working Person.</p>
+                            <div class="about-info mt-5">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <ul class="list-info m-0 ps-0 d-flex">
+                                            <li class="pe-5">
+                                                <p>Name</p>
+                                                <p>Age</p>
+                                                <p>Occupation</p>
+                                            </li>
+                                            <li>
+                                                <p>Jenis Patel</p>
+                                                <p>21</p>
+                                                <p>Computer Engineer</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <ul class="list-info m-0 ps-0 d-flex">
+                                            <li class="pe-5">
+                                                <p>Phone</p>
+                                                <p>Email</p>
+                                                <p>Nationality</p>
+                                            </li>
+                                            <li>
+                                                <p>+91 9925221570</p>
+                                                <p>jenismpatel2004@gmail.com</p>
+                                                <p>Indian</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="left-bg-name position-absolute">
                 <span>Patel</span>
             </div>
         </section>
+
+        <!-- Fun Fact area -->
+        <section class="fun-fact-area" id="works">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                        <div>
+                            <div class="title pt-0">
+                                <span class="text-uppercase">Fun Facts</span>
+                                <h2 class="text-white mt-2 mb-4">I Develop System that Works</h2>
+                            </div>
+                            <p class="my-info">Sed ut perspiciatis unde omnis iste natus kobita tumi sopno charini hoye khbor nio na sit volup sundori toma amar tumi nili mar tatem accusantium dolore.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row gy-3">
+                            <div class="col-sm-6">
+                                <div class="mt-3">
+                                    <div class="counter d-flex gap-4 align-items-center">
+                                        <div class="">
+                                            <h2 class="timer count-title count-number" data-to="12" data-speed="3000"></h2>
+                                        </div>
+                                        <div class="counter-heading text-white">
+                                            <h3>Years of Experience</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mt-3">
+                                    <div class="counter d-flex gap-4 align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <h2 class="timer count-title count-number" data-to="2" data-speed="3000"></h2>
+                                            <span class="alpha">K</span>
+                                        </div>
+                                        <div class="counter-heading text-white">
+                                            <h3>Total <br /> Clients</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mt-3">
+                                    <div class="counter d-flex gap-4 align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <h2 class="timer count-title count-number" data-to="4" data-speed="3000"></h2>
+                                            <span class="alpha">K</span>
+                                        </div>
+                                        <div class="counter-heading text-white">
+                                            <h3>Projects Completed</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="mt-3">
+                                    <div class="counter d-flex gap-4 align-items-center">
+                                        <div class="">
+                                            <h2 class="timer count-title count-number" data-to="30" data-speed="3000"></h2>
+                                        </div>
+                                        <div class="counter-heading text-white">
+                                            <h3>Digital <br /> Products</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill -->
+        <section class="skill-sec position-relative">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                        <div>
+                            <div class="title pt-0">
+                                <span class="text-uppercase">My Skill</span>
+                                <h2 class="text-white mt-2 mb-4">Growing Over Times</h2>
+                            </div>
+                            <p class="my-info">I like to create web pages. I am expert in Front-end side web page. I created many web pages. I am also a technical skill person.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div>
+                            <div class="mt-20" data-aos="fade-up">
+                                <div class="mb-35">
+                                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                                        <h5 class="text-white text-uppercase">html</h5>
+                                        <h5 class="text-white">98%</h5>
+                                    </div>
+                                    <div class="progress-line">
+                                        <div class="second-line"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-35">
+                                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                                        <h5 class="text-white text-uppercase">css</h5>
+                                        <h5 class="text-white">95%</h5>
+                                    </div>
+                                    <div class="progress-line">
+                                        <div class="second-line-95"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-35">
+                                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                                        <h5 class="text-white text-uppercase">jquery</h5>
+                                        <h5 class="text-white">90%</h5>
+                                    </div>
+                                    <div class="progress-line">
+                                        <div class="second-line-90"></div>
+                                    </div>
+                                </div>
+                                <div class="mb-35">
+                                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                                        <h5 class="text-white text-uppercase">bootsrap</h5>
+                                        <h5 class="text-white">95%</h5>
+                                    </div>
+                                    <div class="progress-line">
+                                        <div class="second-line-95"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-bg-name position-absolute">
+                <span>Skills</span>
+            </div>
+        </section> 
     </main>
 
     
@@ -204,7 +378,7 @@
                         <a href="#about" class="text-decoration-none">About</a>
                     </li>
                     <li>
-                        <a href="" class="text-decoration-none">Works</a>
+                        <a href="#works" class="text-decoration-none">Works</a>
                     </li>
                     <li>
                         <a href="" class="text-decoration-none">Service</a>
@@ -242,8 +416,11 @@
     <script src="./assets/js/bootsrap.bundle.js"></script>
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/headline.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/counter.js"></script>
 
     <script>
+        AOS.init();
         $(document).ready(function(){
             $(".menus li a").on("click", function(){
                 $clicked = $(this)

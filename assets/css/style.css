@@ -131,6 +131,7 @@ header {
     line-height: 1.3;
     letter-spacing: 7px;
     font-weight: 400;
+    margin-left: 10px;
 }
 
 .family {
@@ -286,7 +287,7 @@ header {
     font-size: 24px;
 }
 
-.intro-detail p{
+.intro-detail p {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -376,3 +377,144 @@ header {
     z-index: 1;
 }
 
+.mtb {
+    margin-top: 170px;
+    margin-bottom: 110px;
+}
+
+.title {
+    padding-top: 50px;
+}
+
+.title span {
+    font-size: 18px;
+    letter-spacing: 7px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.title h2 {
+    font-size: 60px;
+}
+
+.my-info {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.67;
+    color: #b0aac0;
+    margin-bottom: 35px;
+}
+
+.about-info {
+    border-top: 1px solid #474747;
+    border-bottom: 1px solid #474747;
+    padding: 40px 0;
+    margin-bottom: 80px;
+}
+
+.list-info {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.67;
+    color: #b0aac0;
+}
+
+.list-info p {
+    margin-bottom: 10px;
+}
+
+.personal-info {
+    padding: 0 50px;
+}
+
+/* fun-fact-area */
+
+.fun-fact-area {
+    padding-top: 150px;
+    padding-bottom: 120px;
+    background-color: #212228;
+}
+
+.counter {
+    border: 1px solid #474747;
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+.count-title{
+    font-size: 70px;
+    color: var(--primary-color);
+}
+
+.alpha{
+    font-size: 65px;
+    color: var(--primary-color);
+    margin-left: 3px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: -7px;
+}
+
+.counter-heading h3{
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+/* Skill */
+.skill-sec {
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background-color: #26272E;
+}
+
+.progress-line {
+    width: 100%;
+    height: 5px;
+    background-color: #9B9DB1;
+    border-radius: 10px;
+}
+
+.second-line {
+    width: 98%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.second-line-95 {
+    width: 95%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.second-line-90 {
+    width: 90%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.mb-35 {
+    margin-bottom: 35px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.skill-bg-name {
+    font-size: 300px;
+    font-weight: 500;
+    left: -30px;
+    line-height: 1;
+    bottom: -90px;
+    color: #2D2E36;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.skill-bg-name span {
+    letter-spacing: 10px;
+}
