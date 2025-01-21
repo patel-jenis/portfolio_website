@@ -748,3 +748,62 @@ header {
 .testim {
     font-size: 280px;
 }
+
+/* Contact */
+.contact-me {
+    background-color: #25262F;
+    padding: 170px 0;
+    padding-bottom: 150px;
+}
+
+.contact-wrapper {
+    margin-top: 60px;
+}
+
+.contact-icon {
+    width: 72px;
+    height: 72px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.contact-icon span i {
+    color: white;
+    font-size: 22px;
+}
+
+.contact-info h4 {
+    font-size: 24px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #b0aac0;
+}
+
+.info input, .info textarea {
+    background: #2d2e36;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 5px;
+    color: #9b9db1;
+    border: 1px solid #474747;
+    padding: 15px 0;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.info input:focus-visible {
+    border: 1px solid var(--primary-color) !important;
+    box-shadow: none;
+    outline: 0;
+}
+
+.hello-btn.submit-btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

@@ -64,6 +64,7 @@
         font-size: 18px;
         line-height: 1.5;
     }
+
     .counter {
         padding: 20px 25px;
     }
@@ -123,12 +124,12 @@
         margin-top: 20px;
     }
 
-    .count-title{
+    .count-title {
         font-size: 70px;
         color: var(--primary-color);
     }
-    
-    .alpha{
+
+    .alpha {
         font-size: 65px;
         color: var(--primary-color);
         margin-left: 3px;
@@ -136,8 +137,8 @@
         display: inline-block;
         margin-top: -7px;
     }
-    
-    .counter-heading h3{
+
+    .counter-heading h3 {
         font-size: 22px;
         line-height: 1.5;
     }
@@ -163,23 +164,23 @@
         padding-inline: 30px;
     }
 
-    .service-box-text h3{
+    .service-box-text h3 {
         font-size: 27px;
     }
 
-    .service-box-text p{
+    .service-box-text p {
         font-size: 18px;
     }
-    
+
     .plan-box.mat {
         width: 336px;
         /* margin: 0 100px; */
         margin: auto;
     }
 
-    .testimonial-img  {
+    .testimonial-img {
         margin-top: 50px;
-    } 
+    }
 
     .quit img {
         width: 30px !important;
@@ -193,6 +194,32 @@
     .blockquote p {
         font-size: 17px !important;
     }
+
+    /* .contact-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact-list li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .contact-icon {
+        margin-right: 0px;
+    }
+
+    .mlm {
+        margin-left: 50px;
+    } */
 }
 
 @media (max-width: 768px) {
@@ -344,6 +371,7 @@
     .list-info {
         font-size: 16px;
     }
+
     .fun-fact-area {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -351,7 +379,7 @@
         padding-right: 30px;
         background-color: #212228;
     }
-   
+
     .counter {
         padding: 30px 100px;
     }
@@ -429,11 +457,6 @@
         padding: 30px 30px;
     }
 
-    .service-plan,.testimonial,.services,.skill-sec,.fun-fact-area,.personal-details,.personal-info {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
     .service-heading span {
         letter-spacing: 5px;
     }
@@ -445,5 +468,40 @@
     .slider {
         padding-left: 50px;
         padding-right: 10px;
-    } 
+    }
+
+    .service-heading span {
+        font-size: 16px;
+    }
+
+    .service-heading h2 {
+        font-size: 50px;
+    }
+
+    .contact-icon {
+        width: 62px;
+        height: 62px;
+    }
+
+    .contact-info h4 {
+        font-size: 22px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+
+    .service-plan,
+    .testimonial,
+    .services,
+    .skill-sec,
+    .fun-fact-area,
+    .personal-details,
+    .personal-info,
+    .contact-me {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
 }
