@@ -12,7 +12,6 @@
     --primary-color: #80db66;
 }
 
-
 /* Header */
 header {
     width: 100%;
@@ -222,7 +221,6 @@ header {
 .profile-img {
     height: 100vh;
     position: relative;
-    /* overflow: hidden; */
 }
 
 .profile-img::before {
@@ -340,7 +338,6 @@ header {
 }
 
 /* Personal Details Section */
-
 .personal-details {
     position: relative;
     z-index: 2;
@@ -350,10 +347,7 @@ header {
 .personal-pic {
     margin-top: 170px;
     margin-bottom: 110px;
-    /* padding: 30px;
-    padding-left: 30px; */
     padding-right: 0;
-    /* padding-bottom: 50px; */
     position: relative;
     z-index: 2;
 }
@@ -711,7 +705,7 @@ header {
     /* Enlarge active bullet */
 }
 
-.testi-pic img{
+.testi-pic img {
     border-radius: 50%;
 }
 
@@ -735,11 +729,11 @@ header {
     color: #9b9db1;
 }
 
-.testimonial-img  {
+.testimonial-img {
     padding-top: 20px;
 }
 
-.testimonial-img img{
+.testimonial-img img {
     border-radius: 15px;
     max-width: 100%;
     height: auto;
@@ -785,7 +779,8 @@ header {
     color: #b0aac0;
 }
 
-.info input, .info textarea {
+.info input,
+.info textarea {
     background: #2d2e36;
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
@@ -803,7 +798,147 @@ header {
     outline: 0;
 }
 
+.info textarea:focus-visible {
+    border: 1px solid var(--primary-color) !important;
+    box-shadow: none;
+    outline: 0;
+}
+
 .hello-btn.submit-btn {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+/* Fancy Box */
+.gallery_sec {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background-color: #26272E;
+}
+
+.gallery_sec img {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 250px;
+}
+
+.gallery_sec a {
+    position: relative;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.gallery_sec a::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery_sec img {
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.gallery_sec a:hover img {
+    position: relative;
+    width: 100%;
+}
+
+.gallery_sec a:hover img {
+    opacity: 0.2;
+}
+
+.gallery_sec a:hover::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url(../images/zoom-in\ \(1\).png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 99;
+}
+
+.menu-item {
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(80, 80, 80);
+    margin-top: 30px;
+}
+
+/* Blog */
+.blog {
+    padding-top: 150px;
+    padding-bottom: 120px;
+    background-color: #212228;
+}
+
+.blog-box {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.blog-box img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 0.4s linear;
+}
+
+.blog-box img:hover{
+    transform: scale(1.1);
+}
+
+.single-blog-content {
+    padding: 0 30px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #2d2e36;
+}
+
+.grey {
+    color: #9b9db1;
+}
+/* Footer */
+.footer-main {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #26272E;
+}
+
+.footer-text {
+    font-size: 18px;
+    color: #B0AAC0;
+}
+
+.footer-right ul li a {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    transition: all 0.3s linear;
+}
+.footer-right ul li a:hover {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
 }

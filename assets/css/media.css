@@ -1,3 +1,9 @@
+@media (max-width:1980px) {
+    .left-bg-name {
+        left: -30px;
+    }
+}
+
 @media (max-width:1400px) {
     .main-heading h1 {
         font-size: 100px;
@@ -71,7 +77,11 @@
 }
 
 @media (max-width: 992px) {
-    .header-btn a {
+    header {
+        padding: 10px 0px;
+    }
+
+    .header-btn  {
         display: none;
     }
 
@@ -113,7 +123,6 @@
     .personal-pic img {
         width: 100%;
         height: auto;
-        /* padding-left: 50px; */
     }
 
     .left-bg-name {
@@ -174,7 +183,6 @@
 
     .plan-box.mat {
         width: 336px;
-        /* margin: 0 100px; */
         margin: auto;
     }
 
@@ -195,31 +203,14 @@
         font-size: 17px !important;
     }
 
-    /* .contact-list {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .footer-right {
+        margin-left: 22px;
+        margin-top: 20px;
     }
 
-    .contact-list li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+    .footer-right h4{
+        margin-left: 5px;
     }
-
-    .contact-info {
-        text-align: center;
-        margin-top: 15px;
-    }
-
-    .contact-icon {
-        margin-right: 0px;
-    }
-
-    .mlm {
-        margin-left: 50px;
-    } */
 }
 
 @media (max-width: 768px) {
@@ -298,7 +289,6 @@
 
     .plan-box.mat {
         width: 100%;
-        /* margin: 0 100px; */
         margin: auto;
     }
 
@@ -498,10 +488,25 @@
     .fun-fact-area,
     .personal-details,
     .personal-info,
-    .contact-me {
+    .contact-me,
+    .gallery_sec,
+    .blog {
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 150px;
         padding-bottom: 150px;
+    }
+    .gallery_sec {
+        padding-top: 0px;
+        padding-bottom: 150px;
+    }
+    .horizontal-line {
+        margin-top: 0px;
+    }
+    .personal-info.mtb {
+        padding-bottom: 30px;
+    }
+    .personal-details {
+        padding-bottom: 80px;
     }
 }

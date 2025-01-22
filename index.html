@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Fancy Box -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css'>
     <!-- Swipper Slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- AOS Enimation -->
@@ -22,7 +24,7 @@
     <link rel="stylesheet" href="./assets/css/media.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".main-header">
 
     <header class="position-fixed">
         <div class="container-xl">
@@ -33,7 +35,7 @@
                 <div class="d-flex align-items-center">
                     <ul class="menus d-flex align-items-center gap-5 m-0">
                         <li>
-                            <a href="#profile-page">Home</a>
+                            <a href="#profile-page" class="active">Home</a>
                         </li>
                         <li>
                             <a href="#about">About</a>
@@ -48,12 +50,12 @@
                             <a href="#contact-sec">Contact</a>
                         </li>
                         <li>
-                            <a href="">Blog</a>
+                            <a href="#blog">Blog</a>
                         </li>
                     </ul>
                     <div class="d-flex align-items-center">
                         <div class="header-btn ms-5">
-                            <a href="">DOWNLOAD CV</a>
+                            <a href="./assets/images/CV.png" download="">DOWNLOAD CV</a>
                         </div>
                         <button class="btn menu-btn" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasheader">
@@ -240,10 +242,77 @@
             <div class="left-bg-name position-absolute">
                 <span>Patel</span>
             </div>
+            <div class="container">
+                <div class="horizontal-line"></div>
+            </div>
+        </section>
+
+        <!-- Filter Gallary -->
+        <section class="gallery_sec" id="works">
+            <div class="container">
+                <ul class="mb-5 menu-list list-unstyled d-flex gap-4 justify-content-center">
+                    <li class="menu-item active" data-filter="*">All</li>
+                    <li class="menu-item" data-filter=".html">HTML</li>
+                    <li class="menu-item" data-filter=".css">CSS</li>
+                    <li class="menu-item" data-filter=".jq">JQUERY</li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="row grid">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 all jq">
+                        <a href="./assets/images/jq1.png" data-fancybox="gallery">
+                            <img src="./assets/images/jq.png" />
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 all css">
+                        <a href="./assets/images/css.png" data-fancybox="gallery">
+                            <img src="./assets/images/css.png" />
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 all css">
+                        <a href="./assets/images/css2.png" data-fancybox="gallery">
+                            <img src="./assets/images/css2.png" />
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 all css">
+                        <a href="./assets/images/css3.png" data-fancybox="gallery">
+                            <img src="./assets/images/css3.png" />
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 all html">
+                        <a href="./assets/images/html.png" data-fancybox="gallery">
+                            <img src="./assets/images/html.png" />
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 all css">
+                        <a href="./assets/images/css4.png" data-fancybox="gallery">
+                            <img src="./assets/images/css4.png" />
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 all css">
+                        <a href="./assets/images/css5.png" data-fancybox="gallery">
+                            <img src="./assets/images/css5.png" />
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 all">
+                        <a href="./assets/images/coming-soon-neon-signs-style-text-free-vector.jpg"
+                            data-fancybox="gallery">
+                            <img src="./assets/images/coming-soon-neon-signs-style-text-free-vector.jpg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Fun Fact area -->
-        <section class="fun-fact-area" id="works">
+        <section class="fun-fact-area">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-5">
@@ -594,25 +663,10 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <blockquote class="blockquote">
-                                                    <p>Excepteur sint occaecat cupidatat non proiden sunt in culpa qui officia
-                                                        deserunt mollit anim id est laebor um. Sed ut perspiciatis unde omnis
-                                                        iste natus error sit volup tatem gotiraz bole ami ke
-                                                    </p>
-                                                    <div class="testi-info d-flex align-items-center">
-                                                        <div class="testi-pic">
-                                                            <img src="./assets/images/review1.jpeg" alt="profile">
-                                                        </div>
-                                                        <div class="avatar-info">
-                                                            <h5 class="">Paul Harrison,</h5>
-                                                            <p class="m-0">eThemeStudio</p>
-                                                        </div>
-                                                    </div> 
-                                                </blockquote>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <blockquote class="blockquote">
-                                                    <p>Excepteur sint occaecat cupidatat non proiden sunt in culpa qui officia
-                                                        deserunt mollit anim id est laebor um. Sed ut perspiciatis unde omnis
+                                                    <p>Excepteur sint occaecat cupidatat non proiden sunt in culpa qui
+                                                        officia
+                                                        deserunt mollit anim id est laebor um. Sed ut perspiciatis unde
+                                                        omnis
                                                         iste natus error sit volup tatem gotiraz bole ami ke
                                                     </p>
                                                     <div class="testi-info d-flex align-items-center">
@@ -628,8 +682,29 @@
                                             </div>
                                             <div class="swiper-slide">
                                                 <blockquote class="blockquote">
-                                                    <p>Excepteur sint occaecat cupidatat non proiden sunt in culpa qui officia
-                                                        deserunt mollit anim id est laebor um. Sed ut perspiciatis unde omnis
+                                                    <p>Excepteur sint occaecat cupidatat non proiden sunt in culpa qui
+                                                        officia
+                                                        deserunt mollit anim id est laebor um. Sed ut perspiciatis unde
+                                                        omnis
+                                                        iste natus error sit volup tatem gotiraz bole ami ke
+                                                    </p>
+                                                    <div class="testi-info d-flex align-items-center">
+                                                        <div class="testi-pic">
+                                                            <img src="./assets/images/review1.jpeg" alt="profile">
+                                                        </div>
+                                                        <div class="avatar-info">
+                                                            <h5 class="">Paul Harrison,</h5>
+                                                            <p class="m-0">eThemeStudio</p>
+                                                        </div>
+                                                    </div>
+                                                </blockquote>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <blockquote class="blockquote">
+                                                    <p>Excepteur sint occaecat cupidatat non proiden sunt in culpa qui
+                                                        officia
+                                                        deserunt mollit anim id est laebor um. Sed ut perspiciatis unde
+                                                        omnis
                                                         iste natus error sit volup tatem gotiraz bole ami ke
                                                     </p>
                                                     <div class="testi-info d-flex align-items-center">
@@ -721,29 +796,37 @@
                                     <div class="row gy-3 gx-3">
                                         <div class="col-sm-6">
                                             <div class="info">
-                                                <input type="text" id="inputName" class="name w-100" name="inputName" placeholder="Your Name" required>
+                                                <input type="text" id="inputName" class="name w-100" name="inputName"
+                                                    placeholder="Your Name" required>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="info">
-                                                <input type="email" id="inputMail" class="email w-100" name="inputEmail" placeholder="Your Email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+                                                <input type="email" id="inputMail" class="email w-100" name="inputEmail"
+                                                    placeholder="Your Email"
+                                                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                                                    required>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="info">
-                                                <input type="tel" id="inputNo" class="number w-100" name="inputNumber" placeholder="Your Phone" pattern="[0-9]+" required>
+                                                <input type="tel" id="inputNo" class="number w-100" name="inputNumber"
+                                                    placeholder="Your Phone" pattern="[0-9]+" required>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="info">
-                                                <input type="text" id="inputSub" class="subject w-100" name="inputSubject" placeholder="Your Subject" required>
+                                                <input type="text" id="inputSub" class="subject w-100"
+                                                    name="inputSubject" placeholder="Your Subject" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="mt-4 info">
-                                                <textarea name="inputMessage" id="inputMessage" placeholder="Start writing message here" class="w-100" rows="5" required></textarea>
+                                                <textarea name="inputMessage" id="inputMessage"
+                                                    placeholder="Start writing message here" class="w-100" rows="5"
+                                                    required></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -757,9 +840,166 @@
                 </div>
             </div>
         </section>
+
+        <!-- Blog -->
+        <section class="blog" id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div>
+                            <div class="service-heading mb-5">
+                                <span class="text-uppercase">Get Updates</span>
+                                <h2 class="text-white mt-2 mb-2">Recent Blog</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="overflow-hidden">
+                                <img src="./assets/images/blog.jpeg" alt="photo">
+                            </div>
+                            <div class="single-blog-content">
+                                <ul class="m-0 p-0 d-flex gap-3">
+                                    <li>
+                                        <span class="text-white"><i class="ri-folder-fill"></i></span>
+                                        <span class="grey">Web Design</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white"><i class="ri-user-fill"></i></span>
+                                        <span class="grey">Admin</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white"><i class="ri-chat-1-fill"></i></span>
+                                        <span class="grey">22</span>
+                                    </li>
+                                </ul>
+                                <h5 class="text-white mt-3 mb-3">Become the best version of you everyday</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="overflow-hidden">
+                                <img src="./assets/images/blog2.jpeg" alt="photo">
+                            </div>
+                            <div class="single-blog-content">
+                                <ul class="m-0 p-0 d-flex gap-3">
+                                    <li>
+                                        <span class="text-white"><i class="ri-folder-fill"></i></span>
+                                        <span class="grey">Web Design</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white"><i class="ri-user-fill"></i></span>
+                                        <span class="grey">Admin</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white"><i class="ri-chat-1-fill"></i></span>
+                                        <span class="grey">22</span>
+                                    </li>
+                                </ul>
+                                <h5 class="text-white mt-3 mb-3">Jim says when the musics over turn off the light</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="overflow-hidden">
+                                <img src="./assets/images/blog3.jpeg" alt="photo">
+                            </div>
+                            <div class="single-blog-content">
+                                <ul class="m-0 p-0 d-flex gap-3">
+                                    <li>
+                                        <span class="text-white"><i class="ri-folder-fill"></i></span>
+                                        <span class="grey">Web Design</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white"><i class="ri-user-fill"></i></span>
+                                        <span class="grey">Admin</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white"><i class="ri-chat-1-fill"></i></span>
+                                        <span class="grey">22</span>
+                                    </li>
+                                </ul>
+                                <h5 class="text-white mt-3 mb-3">The man who is happy will makes others too</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-box">
+                            <div class="overflow-hidden">
+                                <img src="./assets/images/blog.jpeg" alt="photo">
+                            </div>
+                            <div class="single-blog-content">
+                                <ul class="m-0 p-0 d-flex gap-3">
+                                    <li>
+                                        <span class="text-white"><i class="ri-folder-fill"></i></span>
+                                        <span class="grey">Web Design</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white"><i class="ri-user-fill"></i></span>
+                                        <span class="grey">Admin</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-white"><i class="ri-chat-1-fill"></i></span>
+                                        <span class="grey">22</span>
+                                    </li>
+                                </ul>
+                                <h5 class="text-white mt-3 mb-3">Become the best version of you everyday</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6">
+                    <div>
+                        <div class="footer-logo">
+                            <img src="./assets/images/j (2).png" alt="logo">
+                        </div>
+                        <div>
+                            <p class="footer-text mt-3 ms-4">All rights reserved <span
+                                    class="text-white">Jenispatel</span> © 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-right">
+                        <h4 class="text-white">Follow me</h4>
+                        <ul class="aside-social d-flex align-items-center gap-2 ps-0 ">
+                            <li class="mt-3 mb-3">
+                                <a href="https://www.facebook.com/jenis.patel.9883?mibextid=ZbWKwL"
+                                    class="blue text-decoration-none"><i class="ri-facebook-fill"></i></a>
+                            </li>
+                            <li class="mt-3 mb-3">
+                                <a href="https://www.instagram.com/___jenis__/?igsh=MXEzNWgxMHYyZHJwMQ%3D%3D#"
+                                    class="sky-blue text-decoration-none"><i class="ri-instagram-line"></i></a>
+                            </li>
+                            <li class="mt-3 mb-3">
+                                <a href="https://www.linkedin.com/in/jenis-patel-949b9b331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app%20"
+                                    class="sky-blue1 text-decoration-none"><i class="ri-linkedin-fill"></i></a>
+                            </li>
+                            <li class="mt-3 mb-3">
+                                <a href=" https://x.com/Jenispatel09?t=FUJ4iyEs2Kx2xGV1_q79Dg&s=08 "
+                                    class="blue text-decoration-none"><i class="ri-twitter-x-line"></i></a>
+                            </li>
+                            <li class="mt-3 mb-3">
+                                <a href="https://github.com/patel-jenis" class="sky-blue text-decoration-none"><i
+                                        class="ri-github-fill"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Header Offcanvas -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasheader">
@@ -787,7 +1027,7 @@
                         <a href="#contact-sec" class="text-decoration-none">Contact</a>
                     </li>
                     <li>
-                        <a href="" class="text-decoration-none">Blog</a>
+                        <a href="#blog" class="text-decoration-none">Blog</a>
                     </li>
                 </ul>
                 <h5 class="text-white ms-4 ps-1 mt-5">Follow me</h5>
@@ -824,6 +1064,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/counter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js'></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     <script>
         AOS.init();
@@ -841,6 +1083,22 @@
                 $clicked = $(this)
                 $(".menus li a").not($clicked).removeClass("active")
                 $clicked.toggleClass("active")
+            })
+
+            var $grid = $('.grid').isotope({
+                // options
+                itemSelector: '.all',
+                layoutMode: 'fitRows'
+            });
+
+            $(".menu-list .menu-item").on("click", function () {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({ filter: filterValue });
+            })
+
+            $(".menu-list .menu-item").on("click", function () {
+                $(".menu-item").removeClass("active")
+                $(this).toggleClass("active")
             })
         })
     </script>
