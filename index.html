@@ -1077,6 +1077,10 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     <script>
+        $(window).on("load", function(){
+            $(".pre-loader").delay(2000).fadeOut()
+        })
+
         AOS.init();
 
         Fancybox.bind("[data-fancybox]", {
@@ -1115,9 +1119,6 @@
             })
         })
 
-        $(window).on("load", function(){
-            $(".pre-loader").delay(2000).fadeOut()
-        })
     </script>
 
 </body>
