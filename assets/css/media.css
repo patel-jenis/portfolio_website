@@ -26,10 +26,6 @@
         display: inline-block;
     }
 
-    .menus li a {
-        display: none;
-    }
-
     header {
         padding: 25px;
     }
@@ -81,20 +77,18 @@
         padding: 10px 0px;
     }
 
-    .header-btn  {
-        display: none;
-    }
-
     .main-page {
         margin-top: 100px;
-        height: 1000px;
+        height: 1130px;
         text-align: center;
     }
 
     .profile-img {
         margin-left: 40px;
     }
-
+    .profile-img::before {
+        display: none;
+    }
     .profile-img img {
         max-width: auto;
         position: relative;
@@ -128,7 +122,6 @@
     .left-bg-name {
         display: none;
     }
-
     .personal-info {
         margin-top: 20px;
     }
@@ -215,7 +208,7 @@
 
 @media (max-width: 768px) {
     .main-page {
-        height: 980px;
+        height: 1100px;
     }
 
     .logo-img img {
@@ -383,6 +376,21 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+    .service-plan,
+    .testimonial,
+    .services,
+    .skill-sec,
+    .fun-fact-area,
+    .personal-details,
+    .personal-info,
+    .contact-me,
+    .gallery_sec,
+    .blog {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -479,22 +487,6 @@
 
     .contact-info p {
         font-size: 16px;
-    }
-
-    .service-plan,
-    .testimonial,
-    .services,
-    .skill-sec,
-    .fun-fact-area,
-    .personal-details,
-    .personal-info,
-    .contact-me,
-    .gallery_sec,
-    .blog {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 150px;
-        padding-bottom: 150px;
     }
     .gallery_sec {
         padding-top: 0px;

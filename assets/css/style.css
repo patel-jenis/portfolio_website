@@ -45,6 +45,7 @@ header {
 .header-btn a {
     padding: 12px 28px 11px 28px;
     color: white;
+    white-space: nowrap;
     border: 1px solid var(--primary-color);
     text-decoration: none;
     border-radius: 5px;
@@ -221,6 +222,10 @@ header {
 .profile-img {
     height: 100vh;
     position: relative;
+}
+
+.profile-img img {
+    object-fit: cover;
 }
 
 .profile-img::before {
@@ -812,15 +817,15 @@ header {
 /* Fancy Box */
 .gallery_sec {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 150px;
     background-color: #26272E;
 }
 
 .gallery_sec img {
     width: 100%;
-    margin-bottom: 30px;
-    height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .gallery_sec a {
@@ -867,7 +872,7 @@ header {
     content: "";
     width: 50px;
     height: 50px;
-    background: url(../images/zoom-in\ \(1\).png);
+    background: url(../images/search\ \(2\).png);
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 99;
@@ -897,7 +902,8 @@ header {
     overflow: hidden;
     border-radius: 10px;
 }
-.blog-box img{
+
+.blog-box img {
     width: 100%;
     height: 100%;
     border-top-left-radius: 10px;
@@ -905,7 +911,7 @@ header {
     transition: all 0.4s linear;
 }
 
-.blog-box img:hover{
+.blog-box img:hover {
     transform: scale(1.1);
 }
 
@@ -921,6 +927,7 @@ header {
 .grey {
     color: #9b9db1;
 }
+
 /* Footer */
 .footer-main {
     padding-top: 80px;
@@ -933,12 +940,54 @@ header {
     color: #B0AAC0;
 }
 
-.footer-right ul li a {
+.footer-right li a {
     background-color: transparent;
     border: 1px solid var(--primary-color);
     transition: all 0.3s linear;
 }
-.footer-right ul li a:hover {
+
+.footer-right li a:hover {
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
+}
+
+.dot {
+    width: 1em;
+    height: 1em;
+    background: #66ff00;
+    border-radius: 20em;
+    filter: brightness(1.25);
+    animation: stretch 1s linear alternate infinite;
+}
+
+@keyframes stretch {
+    100% {
+        transform-origin: left;
+        transform: translateX(7em);
+    }
+
+    50% {
+        width: 3em;
+    }
+}
+
+.pre-loader {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/slider-bg.jpg);
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+}
+
+.loader {
+    outline: 1px solid #4ec200;
+    outline-offset: 3px;
+    border-radius: 15em;
+    box-shadow: 0 0 1.5em -0.15em #66ff00;
+    width: 8em;
 }
